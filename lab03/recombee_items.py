@@ -26,10 +26,10 @@ def send_items():
         try:
             properties = {
                 "title": str(row['title']),
-                "subtitle": str(row['subtitle']),
-                "authors": str(row['authors']),
+                "subtitle": str(row["subtitle"]) if pd.notna(row["subtitle"]) else "",
+                "authors": str(row["authors"]) if pd.notna(row["authors"]) else "Unknown",
                 "categories": str(row['categories']),
-                "description": str(row['description']),
+                "description": str(row["description"]) if pd.notna(row["description"]) else "",
                 "published_year": int(row['published_year']),
                 "average_rating": float(row['average_rating']),
                 "num_pages": int(row['num_pages']),
@@ -49,7 +49,7 @@ def send_items():
         if len(requests) == 100:
             client.send(Batch(requests))
             requests = []
-            print(f"S-a procesat un lot de 100 item-uri... ({index + 1} / {len(df) - skipped})")
+            print(f"S-a procesat un lot de 100 item-uri... ({index + 1 - skipped} / {len(df) - skipped})")
             
     # Trimitem si restul ramanase (daca numarul total nu e multiplu de 100)
     if requests:
