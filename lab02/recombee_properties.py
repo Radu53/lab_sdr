@@ -1,4 +1,3 @@
-
 import sys
 from pathlib import Path
 import pandas as pd
@@ -13,16 +12,18 @@ from db_settings import DB_NAME, PRIVATE_TOKEN, REGION
 # Initializarea clientului Recombee
 client = RecombeeClient(DB_NAME, PRIVATE_TOKEN, region=REGION)
 
-PATH_DATASET = f"{PROJECT_ROOT}/datasets/bestsellers.csv" 
+PATH_DATASET = f"{PROJECT_ROOT}/datasets/books.csv" 
 
 PROPRIETATI_CATALOG = [
-    {"name": "Name", "type": "string"},
-    {"name": "Author", "type": "string"},
-    {"name": "User_Rating", "type": "double"},
-    {"name": "Reviews", "type": "int"},
-    {"name": "Price", "type": "double"},
-    {"name": "Year", "type": "int"},
-    {"name": "Genre", "type": "string"},
+    {"name": "title", "type": "string"},
+    {"name": "subtitle", "type": "string"},
+    {"name": "authors", "type": "string"},
+    {"name": "categories", "type": "string"},
+    {"name": "description", "type": "string"},
+    {"name": "published_year", "type": "int"},
+    {"name": "average_rating", "type": "double"},
+    {"name": "num_pages", "type": "int"},
+    {"name": "ratings_count", "type": "int"},
 ]
 
 def load_dataset():

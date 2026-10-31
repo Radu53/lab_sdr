@@ -224,3 +224,5 @@ __marimo__/
 venv/
 venv_*/
 db_settings.py
+*.*_delete
+*_delete/
