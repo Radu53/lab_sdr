@@ -1,0 +1,19 @@
+{
+  "device_context": {
+    "browser": "Firefox 159.0",
+    "device_type": "Desktop",
+    "os": "Windows 10",
+    "raw_user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:159.0) Gecko/20100101 Firefox/159.0"
+  },
+  "network": {
+    "ip_address": "127.0.0.1"
+  },
+  "run_info": {
+    "timestamp": 1793441728,
+    "verification_hash": "0b04aa4266d7"
+  },
+  "student": "Radu Catalin-Mihai",
+  "user_preferences_implicit": {
+    "preferred_language": "en-US"
+  }
+}
