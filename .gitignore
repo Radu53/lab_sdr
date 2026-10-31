@@ -226,3 +226,4 @@ venv_*/
 db_settings.py
 *.*_delete
 *_delete/
+repo.txt

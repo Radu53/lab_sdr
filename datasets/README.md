@@ -1,4 +1,4 @@
-# Dataset: Carti bestseller de pe Amazon
+# Dataset: Carti bestseller
 
 ## Descriere
 
