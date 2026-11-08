@@ -1,0 +1,244 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="urn:webprotege:ontology:947426cd-1887-41b4-82bf-fd7c0c2bc23e#"
+     xml:base="urn:webprotege:ontology:947426cd-1887-41b4-82bf-fd7c0c2bc23e"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:webprotege="http://webprotege.stanford.edu/">
+    <owl:Ontology rdf:about="urn:webprotege:ontology:947426cd-1887-41b4-82bf-fd7c0c2bc23e"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://webprotege.stanford.edu/createdBy -->
+
+    <owl:ObjectProperty rdf:about="http://webprotege.stanford.edu/createdBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://webprotege.stanford.edu/R9TXzgt8QY5Yyj3DPE8h0s2"/>
+        <rdfs:range rdf:resource="http://webprotege.stanford.edu/RDSJDrCJxVAsGHWxAyL7Ezt"/>
+        <rdfs:label>createdBy</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://webprotege.stanford.edu/hasTopping -->
+
+    <owl:ObjectProperty rdf:about="http://webprotege.stanford.edu/hasTopping">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://webprotege.stanford.edu/R9TXzgt8QY5Yyj3DPE8h0s2"/>
+        <rdfs:range rdf:resource="http://webprotege.stanford.edu/RDKmVS8fX0kg7Qa8HfC0ELp"/>
+        <rdfs:label>hasTopping</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://webprotege.stanford.edu/isToppingOf -->
+
+    <owl:ObjectProperty rdf:about="http://webprotege.stanford.edu/isToppingOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://webprotege.stanford.edu/RDKmVS8fX0kg7Qa8HfC0ELp"/>
+        <rdfs:range rdf:resource="http://webprotege.stanford.edu/R9TXzgt8QY5Yyj3DPE8h0s2"/>
+        <rdfs:label>isToppingOf</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://webprotege.stanford.edu/hasCalories -->
+
+    <owl:DatatypeProperty rdf:about="http://webprotege.stanford.edu/hasCalories">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label>hasCalories</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://webprotege.stanford.edu/hasPrice -->
+
+    <owl:DatatypeProperty rdf:about="http://webprotege.stanford.edu/hasPrice">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:label>hasPrice</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://webprotege.stanford.edu/hasUserHash -->
+
+    <owl:DatatypeProperty rdf:about="http://webprotege.stanford.edu/hasUserHash">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://webprotege.stanford.edu/RDSJDrCJxVAsGHWxAyL7Ezt"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>hasUserHash</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://webprotege.stanford.edu/OliveTopping -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/OliveTopping">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RDKmVS8fX0kg7Qa8HfC0ELp"/>
+        <rdfs:label>OliveTopping</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R9TXzgt8QY5Yyj3DPE8h0s2 -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R9TXzgt8QY5Yyj3DPE8h0s2">
+        <rdfs:label>Pizza</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RDKmVS8fX0kg7Qa8HfC0ELp -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RDKmVS8fX0kg7Qa8HfC0ELp">
+        <rdfs:label>Topping</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RDSJDrCJxVAsGHWxAyL7Ezt -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RDSJDrCJxVAsGHWxAyL7Ezt">
+        <rdfs:label>Student</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RDmRl1mw58q5oQ3VfUmdfwp -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RDmRl1mw58q5oQ3VfUmdfwp">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RDKmVS8fX0kg7Qa8HfC0ELp"/>
+        <rdfs:label>ProsciuttoTopping</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RFeOHaNeruU9UGnBtD2Ii3 -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RFeOHaNeruU9UGnBtD2Ii3">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R9TXzgt8QY5Yyj3DPE8h0s2"/>
+        <rdfs:label>PepperoniPizza</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RYA454dMqQ0wekEnjmjkmZ -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RYA454dMqQ0wekEnjmjkmZ">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R9TXzgt8QY5Yyj3DPE8h0s2"/>
+        <rdfs:label>MargheritaPizza</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://webprotege.stanford.edu/margherita1 -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/margherita1">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/RYA454dMqQ0wekEnjmjkmZ"/>
+        <webprotege:createdBy rdf:resource="http://webprotege.stanford.edu/student1"/>
+        <webprotege:hasTopping rdf:resource="http://webprotege.stanford.edu/olive1"/>
+        <webprotege:hasCalories rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">900</webprotege:hasCalories>
+        <webprotege:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">55</webprotege:hasPrice>
+        <rdfs:label>margherita1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/olive1 -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/olive1">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/OliveTopping"/>
+        <webprotege:isToppingOf rdf:resource="http://webprotege.stanford.edu/margherita1"/>
+        <webprotege:hasCalories rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">70</webprotege:hasCalories>
+        <webprotege:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</webprotege:hasPrice>
+        <rdfs:label>olive1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/pepperoni1 -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/pepperoni1">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/RFeOHaNeruU9UGnBtD2Ii3"/>
+        <webprotege:createdBy rdf:resource="http://webprotege.stanford.edu/student1"/>
+        <webprotege:hasTopping rdf:resource="http://webprotege.stanford.edu/prosciutto1"/>
+        <webprotege:hasCalories rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">850</webprotege:hasCalories>
+        <webprotege:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">60</webprotege:hasPrice>
+        <rdfs:label>pepperoni1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/prosciutto1 -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/prosciutto1">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/RDmRl1mw58q5oQ3VfUmdfwp"/>
+        <webprotege:isToppingOf rdf:resource="http://webprotege.stanford.edu/pepperoni1"/>
+        <webprotege:hasCalories rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">150</webprotege:hasCalories>
+        <webprotege:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</webprotege:hasPrice>
+        <rdfs:label>prosciutto1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/student1 -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/student1">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/RDSJDrCJxVAsGHWxAyL7Ezt"/>
+        <webprotege:hasUserHash rdf:datatype="http://www.w3.org/2001/XMLSchema#string">d06db3e39341f3335a038c49490d51dcfe26f8d61d6d8c81f07d50c33fdfebe3</webprotege:hasUserHash>
+        <rdfs:label>student1</rdfs:label>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.13) https://github.com/owlcs/owlapi -->
+
