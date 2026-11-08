@@ -36,6 +36,10 @@ def send_items():
                 "ratings_count": int(row['ratings_count']),
             }
         
+        # Adaugam request-ul de setare a valorilor pentru item
+        # (SetItemValues creează automat item-ul dacă acesta nu există)
+        requests.append(SetItemValues(item_id, properties, cascade_create=True))
+        
             # Adaugam request-ul de setare a valorilor pentru item
             # (SetItemValues creează automat item-ul dacă acesta nu există)
             requests.append(SetItemValues(item_id, properties, cascade_create=True))
